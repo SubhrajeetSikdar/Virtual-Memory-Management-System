@@ -40,6 +40,21 @@ This project implements a simple virtual memory manager (VMM) in Python. The VMM
 - `vmmmisc.py`: Miscellaneous functions and classes related to the VMM.
 - `README.md`: This file providing an overview of the project.
 
+- ## Custom Exceptions
+
+- `AddressTranslationError`: Raised when address translation fails during virtual-to-physical address conversion.
+- `FrameNotFoundError`: Raised when the requested frame for a process page is not found in memory.
+- `SignalUser1`: A class for signaling and passing data to a designated handler.
+
+- ## Utility Functions
+
+- `inttohex(int_)`: Converts an integer to a hexadecimal string.
+- `inttobin(int_)`: Converts an integer to a binary string.
+- `hextobin(hex_)`: Converts a hexadecimal string to a binary string.
+- `bintohex(bin_)`: Converts a binary string to a hexadecimal string.
+
+- 
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
