@@ -56,7 +56,7 @@ def SIGUSR1_Handler(pidin, pagein):
 		process[pid][page]["p"] = 0
 		memory[frame] = (-1, -1)
 		time.sleep(1)
-	print("Loading.\t pid: ", pidin, ", page: ", pagein, ", frame: ", frame)
+	print("Loading.\t pid: ", pidin, ", page: ",pagein, ", frame: ", frame)
 	time.sleep(1)
 	setEntry(pidin, pagein, frame)
 	t = blockedqueue.pop(0)
