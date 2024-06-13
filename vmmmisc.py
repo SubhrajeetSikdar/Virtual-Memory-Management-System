@@ -18,10 +18,9 @@ class SignalUser1():
 	def __init__(self):
 		self.pid = -1
 		self.page = -1
+	def set(self,pid,page):
+		self.pid=pid
+		self.page=page
 		
-	def set(self, pid, page):
-		self.pid = pid
-		self.page = page
-		
-	def send(self, handler): 
-		handler(self.pid, self.page)
+	def send(self,handler): 
+		handler(self.pid,self.page)
