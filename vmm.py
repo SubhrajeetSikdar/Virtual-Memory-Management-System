@@ -1,14 +1,12 @@
-
-
 from utils import *
 from vmmmisc import *
 import sys, threading, time, random, math
 import os as os_
 
-memorySize = int(sys.argv[2])
-pageSize = 1024
-P = noPages = int(memorySize/pageSize)
-B = noBitsForPage = int(math.log(P, 2))
+memorySize=int(sys.argv[2])
+pageSize=1024
+P=noPages=int(memorySize/pageSize)
+B=noBitsForPage=int(math.log(P, 2))
 
 
 def getPageNo(vaddr):
