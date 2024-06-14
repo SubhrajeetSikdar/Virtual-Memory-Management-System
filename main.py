@@ -15,7 +15,7 @@ for entry in requestList:
 	if not process.__contains__(pid):
 		processInit(pid)
 	requests[pid].append((rw, vaddr))
-thread_mmu = threading.Thread(target=mmu)
+thread_mmu=threading.Thread(target=mmu)
 thread_os_scheduler=threading.Thread(target=scheduler)
 thread_os_scheduler.start();
 thread_mmu.start();
