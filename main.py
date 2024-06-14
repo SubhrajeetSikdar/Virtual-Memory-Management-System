@@ -1,11 +1,11 @@
 from vmm import *
-import sys, threading
+import sys,threading
 f = open(sys.argv[1], 'r')
-requestList = f.readlines()
+requestList=f.readlines()
 f.close()
-memorySize = int(sys.argv[2])
-P = noPages = int(memorySize/pageSize)
-B = noBitsForPage = int(math.log(P, 2))
+memorySize=int(sys.argv[2])
+P=noPages=int(memorySize/pageSize)
+B=noBitsForPage=int(math.log(P, 2))
 
 for entry in requestList:
 	pid, rw, vaddr = entry.split(',')
