@@ -11,7 +11,6 @@ This project implements a simple virtual memory manager (VMM) in Python. The VMM
 - **Address Translation:** Translates virtual addresses to physical addresses using a page table.
 - **Memory Management:** Manages memory allocation and deallocation for processes.
 
-
 ## Getting Started
 
 ### Prerequisites
