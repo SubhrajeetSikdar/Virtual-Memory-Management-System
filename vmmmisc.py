@@ -13,7 +13,6 @@ class FrameNotFoundError(Exception):
 
 	def __str__(self):
 		return repr("Frame Not Found. pid: " + str(self.pid) + ", page: " + str(self.page))
-
 class SignalUser1():
 	def __init__(self):
 		self.pid = -1
