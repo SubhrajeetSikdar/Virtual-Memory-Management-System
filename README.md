@@ -52,7 +52,7 @@ flowchart TD
     Dirty -- Yes --> WB[Disk Write-Back + Disk Read]
     Dirty -- No --> DiskIn
     WB --> Inval[Invalidate TLB & Page Table Entry]
-    DiskIn --> Inval --> FaultCost[CPU: tlb + 2*mem | Block: disk or 2*disk]
+    DiskIn --> Inval --> FaultCost["CPU: tlb + 2*mem | Block: disk or 2*disk"]
 ```
 
 ### 2. Two-Thread Scheduler & MMU Coordination
